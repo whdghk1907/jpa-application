@@ -8,6 +8,11 @@ public class JpashopApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JpashopApplication.class, args);
-	}
 
+		LombokTest lombok = new LombokTest();
+		lombok.setName("Lombok");
+
+		String data = lombok.getName();
+		System.out.println(data);
+	}
 }
